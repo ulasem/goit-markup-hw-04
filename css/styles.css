@@ -17,6 +17,16 @@ body {
   background-color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -111,7 +121,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-item-link::after {
+.active::after {
   content: '';
   width: 100%;
   position: absolute;
@@ -176,6 +186,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -358,6 +369,7 @@ img {
 .portfolio-list-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 
 .portfolio-list-item-img {
@@ -393,10 +405,6 @@ img {
 .portfolio-list-item-img {
 }
 .portfolio-list-item-text {
-}
-
-.portfolio-list-item-img-text:hover {
-  transform: translateY(0%);
 }
 
 /* footer */
